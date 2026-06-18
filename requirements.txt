@@ -1,0 +1,9 @@
+# requirements.txt
+
+# No external dependencies are required for this project.
+# All code uses only Python standard library features.
+
+# If you later add third-party packages, pin them here, one per line,
+# e.g.:
+# requests==2.31.0
+
