@@ -1,0 +1,161 @@
+# Grade System
+
+A simple Python terminal application that converts a student's mark (0–100) into a letter grade based on a predefined grading scale.
+
+## Grade Scale
+
+| Mark Range | Grade |
+|------------|--------|
+| 90 - 100 | A |
+| 80 - 89.99 | B |
+| 70 - 79.99 | C |
+| 60 - 69.99 | D |
+| Below 60 | E |
+
+**Boundary values are inclusive.**
+- 90 → A
+- 80 → B
+- 70 → C
+- 60 → D
+
+---
+
+## Features
+
+- Accepts user input from the terminal.
+- Supports integer and decimal marks.
+- Validates input before processing.
+- Handles invalid input gracefully.
+- Prevents program crashes from unexpected user input.
+- Clear and user-friendly error messages.
+- Uses only Python Standard Library.
+
+---
+
+## Requirements
+
+- Python 3.8 or later
+
+No external libraries are required.
+
+---
+
+## File Structure
+
+```text
+project/
+│
+├── grade_system.py
+└── README.md
+```
+
+---
+
+## Running the Program
+
+Navigate to the project folder and run:
+
+```bash
+python grade_system.py
+```
+
+or
+
+```bash
+python3 grade_system.py
+```
+
+---
+
+## Example Usage
+
+### Valid Input
+
+```text
+Enter a mark (0-100): 95
+Mark entered: 95
+Grade: A
+```
+
+### Decimal Input
+
+```text
+Enter a mark (0-100): 89.5
+Mark entered: 89.5
+Grade: B
+```
+
+### Invalid Input
+
+```text
+Enter a mark (0-100): abc
+Error: Input must be a valid number.
+```
+
+### Out of Range
+
+```text
+Enter a mark (0-100): 120
+Error: Mark must be between 0 and 100 inclusive.
+```
+
+---
+
+## Error Handling
+
+The application handles:
+
+| Input | Result |
+|---------|---------|
+| Empty input | Error |
+| Spaces only | Error |
+| Letters (abc) | Error |
+| Mixed text (90abc) | Error |
+| Negative numbers | Error |
+| Numbers greater than 100 | Error |
+| Special values (NaN) | Error |
+| Infinity | Error |
+
+---
+
+## Design Decisions
+
+- Marks are accepted as floating-point values to support decimal marks.
+- The grading boundaries are inclusive.
+- Invalid data is rejected before grading.
+- The program exits gracefully with a clear message when invalid input is provided.
+
+---
+
+## Test Cases
+
+| Input | Expected Grade |
+|---------|---------|
+| 100 | A |
+| 90 | A |
+| 89.99 | B |
+| 80 | B |
+| 79.99 | C |
+| 70 | C |
+| 69.99 | D |
+| 60 | D |
+| 59.99 | E |
+| 0 | E |
+
+### Invalid Test Cases
+
+| Input |
+|---------|
+| -1 |
+| 101 |
+| abc |
+| 95abc |
+| "" |
+| NaN |
+| Infinity |
+
+---
+
+## Author
+
+SN
