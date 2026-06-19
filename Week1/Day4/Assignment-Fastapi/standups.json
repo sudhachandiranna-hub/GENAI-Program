@@ -1,0 +1,29 @@
+[
+  {
+    "id": "ea10fefd",
+    "name": "Sudha",
+    "did": "Day4 assignments",
+    "doing": "Day3",
+    "blockers": "Venv conflict",
+    "date": "2026-06-19",
+    "status": "active"
+  },
+  {
+    "id": "8e4900f0",
+    "name": "Raji",
+    "did": "Day4 assignments",
+    "doing": "Day 5 Recordings",
+    "blockers": "None",
+    "date": "2026-06-19",
+    "status": "active"
+  },
+  {
+    "id": "0ce04d43",
+    "name": "Sudha",
+    "did": "Day 4",
+    "doing": "Day 5",
+    "blockers": "None",
+    "date": "2026-06-19",
+    "status": "active"
+  }
+]
